@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMI | Seu espaço de equilíbrio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">lumi<span>✿</span></a>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#humor">Meu humor</a>
+    <a href="#habitos">Hábitos</a>
+    <a href="#cuidados">Autocuidado</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div>
+      <span class="tag">SEU MOMENTO DE PAUSA ♡</span>
+      <h1>Cuide de si.<br><span>Floresça no seu tempo.</span></h1>
+      <p>Pequenos cuidados, grandes transformações. Seu bem-estar começa com um passo de cada vez.</p>
+      <a href="#humor" class="btn">Começar minha jornada ✿</a>
+    </div>
+    <div class="flower">✿</div>
+  </section>
+
+  <section id="humor">
+    <span class="tag">01 — COMO VOCÊ ESTÁ?</span>
+    <h2>Como está seu coração hoje?</h2>
+    <p>Não existe sentimento errado. Escolha o que combina com seu momento.</p>
+    <div class="moods">
+      <button onclick="escolherHumor('Feliz 😊')">😊<small>Feliz</small></button>
+      <button onclick="escolherHumor('Tranquilo 😌')">😌<small>Tranquilo</small></button>
+      <button onclick="escolherHumor('Ansioso 😟')">😟<small>Ansioso</small></button>
+      <button onclick="escolherHumor('Cansado 😴')">😴<small>Cansado</small></button>
+      <button onclick="escolherHumor('Triste 🥺')">🥺<small>Triste</small></button>
+    </div>
+    <p id="resposta"></p>
+  </section>
+
+  <section id="habitos">
+    <span class="tag">02 — PEQUENOS PASSOS</span>
+    <h2>Meu cuidado diário</h2>
+    <p>Marque as pequenas conquistas do seu dia.</p>
+    <div class="habit-card">
+      <label><input type="checkbox"> 💧 Beber água</label>
+      <label><input type="checkbox"> 🌿 Fazer uma pausa</label>
+      <label><input type="checkbox"> 🚶 Movimentar o corpo</label>
+      <label><input type="checkbox"> 📖 Ler ou aprender algo</label>
+      <label><input type="checkbox"> 🌙 Ter um momento de descanso</label>
+      <div class="progress"><div id="barra"></div></div>
+      <p id="progresso">0 de 5 hábitos concluídos</p>
+    </div>
+  </section>
+
+  <section id="cuidados">
+    <span class="tag">03 — UM CARINHO PARA VOCÊ</span>
+    <h2>Um lembrete especial</h2>
+    <div class="quote">
+      <span>✿</span>
+      <h3 id="frase">Você não precisa ter tudo resolvido hoje.</h3>
+      <button class="btn" onclick="novaFrase()">Outra mensagem ♡</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h2>lumi<span>✿</span></h2>
+  <p>Floresça no seu próprio tempo.</p>
+  <small>Projeto educativo de promoção do bem-estar.</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
